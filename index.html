@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Zafar — AI Strategist & Digital Product Creator | Islamabad</title>
     <meta name="description" content="I build AI-powered stores, create digital guides, and teach entrepreneurs how to earn online. Based in Islamabad, serving clients worldwide.">
-    <meta name="keywords" content="AI strategist, digital products, web development, Pakistan, Islamabad, AI store development, prompt engineering">
+    <meta name="keywords" content="AI strategist, digital products, web development, Pakistan, Islamabad, AI store development, prompt engineering, ecommerce">
     <meta name="author" content="Ali Zafar">
-    
+    <meta name="theme-color" content="#0b0b0f">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alizafar780.github.io/">
+    <meta property="og:title" content="Ali Zafar — AI Strategist & Digital Product Creator">
+    <meta property="og:description" content="I build AI-powered stores, create digital guides, and teach entrepreneurs how to earn online. Based in Islamabad, serving clients worldwide.">
+    <meta property="og:image" content="https://alizafar780.github.io/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://alizafar780.github.io/">
+    <meta name="twitter:title" content="Ali Zafar — AI Strategist & Digital Product Creator">
+    <meta name="twitter:description" content="I build AI-powered stores, create digital guides, and teach entrepreneurs how to earn online.">
+    <meta name="twitter:image" content="https://alizafar780.github.io/og-image.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,31 +33,67 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ali Zafar",
+      "url": "https://alizafar780.github.io/",
+      "jobTitle": "AI Strategist & Digital Product Creator",
+      "description": "I build AI-powered stores, create digital guides, and teach entrepreneurs how to earn online.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Islamabad",
+        "addressCountry": "PK"
+      },
+      "sameAs": [
+        "https://twitter.com/AliZafarAI",
+        "https://linkedin.com/in/alizafar780",
+        "https://github.com/AliZafar780"
+      ]
+    }
+    </script>
+
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Ali Zafar Portfolio",
+      "url": "https://alizafar780.github.io/",
+      "author": {
+        "@type": "Person",
+        "name": "Ali Zafar"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Custom Cursor Dot -->
     <div class="cursor-dot"></div>
     
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <div class="logo">
+            <a href="#home" class="logo" aria-label="Ali Zafar Home">
                 <span class="logo-text">Ali Zafar</span>
                 <span class="logo-dot"></span>
+            </a>
+            
+            <div class="nav-links" role="menubar">
+                <a href="#home" class="nav-link" role="menuitem">Home</a>
+                <a href="#about" class="nav-link" role="menuitem">About</a>
+                <a href="#services" class="nav-link" role="menuitem">Services</a>
+                <a href="#products" class="nav-link" role="menuitem">Products</a>
+                <a href="#blog" class="nav-link" role="menuitem">Blog</a>
+                <a href="#contact" class="nav-link" role="menuitem">Contact</a>
             </div>
             
-            <div class="nav-links">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#products" class="nav-link">Products</a>
-                <a href="#blog" class="nav-link">Blog</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
+            <a href="#contact" class="nav-cta" aria-label="Work with me">Work With Me</a>
             
-            <a href="#contact" class="nav-cta">Work With Me</a>
-            
-            <button class="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -48,14 +101,14 @@
         </div>
         
         <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="#home" class="mobile-link">Home</a>
-            <a href="#about" class="mobile-link">About</a>
-            <a href="#services" class="mobile-link">Services</a>
-            <a href="#products" class="mobile-link">Products</a>
-            <a href="#blog" class="mobile-link">Blog</a>
-            <a href="#contact" class="mobile-link">Contact</a>
-            <a href="#contact" class="mobile-cta">Work With Me</a>
+        <div class="mobile-menu" role="menu" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-link" role="menuitem">Home</a>
+            <a href="#about" class="mobile-link" role="menuitem">About</a>
+            <a href="#services" class="mobile-link" role="menuitem">Services</a>
+            <a href="#products" class="mobile-link" role="menuitem">Products</a>
+            <a href="#blog" class="mobile-link" role="menuitem">Blog</a>
+            <a href="#contact" class="mobile-link" role="menuitem">Contact</a>
+            <a href="#contact" class="mobile-cta" role="menuitem">Work With Me</a>
         </div>
     </nav>
 
@@ -276,8 +329,8 @@
                 <h3 class="free-title">Get Chapter 1 Free</h3>
                 <p class="free-desc">Enter your email and receive the first chapter of the Prompt Engineering Guide instantly.</p>
                 
-                <form class="free-form">
-                    <input type="email" placeholder="Your email address" required>
+                <form class="free-form" aria-label="Free chapter download">
+                    <input type="email" placeholder="Your email address" aria-label="Email address" required>
                     <button type="submit" class="btn btn-free">Send Me the Free Chapter</button>
                 </form>
             </div>
@@ -429,8 +482,8 @@
                 <h2 class="newsletter-title">Join 2,000+ People Learning AI & Business Every Week</h2>
                 <p class="newsletter-desc">Every Tuesday: one AI tip, one business strategy, one free resource. No spam. Unsubscribe anytime.</p>
                 
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
+                <form class="newsletter-form" aria-label="Newsletter signup">
+                    <input type="email" placeholder="Your email address" aria-label="Email address" required>
                     <button type="submit" class="btn btn-primary">Subscribe Free</button>
                 </form>
                 
@@ -473,17 +526,17 @@
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" aria-label="Contact form" novalidate>
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" placeholder="Your Name" aria-label="Your Name" required autocomplete="name">
                     </div>
                     
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" placeholder="Your Email" aria-label="Your Email" required autocomplete="email">
                     </div>
                     
                     <div class="form-group">
-                        <select required>
+                        <select required aria-label="Select Service">
                             <option value="" disabled selected>Select Service</option>
                             <option value="ai-store">AI Store Development</option>
                             <option value="consulting">AI Consulting</option>
@@ -493,7 +546,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <select required>
+                        <select required aria-label="Select Budget">
                             <option value="" disabled selected>Select Budget</option>
                             <option value="under-500">Under $500</option>
                             <option value="500-1000">$500 - $1000</option>
@@ -503,56 +556,58 @@
                     </div>
                     
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <textarea placeholder="Your Message" aria-label="Your Message" rows="5" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                    <div class="form-success" id="formSuccess">Message sent successfully!</div>
+                    <button type="submit" class="btn btn-primary" aria-label="Send message">Send Message</button>
+                    <div class="form-success" id="formSuccess" role="alert">Message sent successfully!</div>
                 </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-top">
                 <div class="footer-logo">
-                    <div class="logo">
+                    <a href="#home" class="logo" aria-label="Ali Zafar Home">
                         <span class="logo-text">Ali Zafar</span>
                         <span class="logo-dot"></span>
-                    </div>
+                    </a>
                     <p class="footer-tagline">Building AI-powered businesses from Islamabad to the world.</p>
                 </div>
                 
                 <div class="footer-links">
                     <div class="link-column">
+                        <h4 style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--text-muted);margin-bottom:8px;font-weight:500;">Explore</h4>
                         <a href="#products" class="footer-link">Products</a>
                         <a href="#services" class="footer-link">Services</a>
                         <a href="#blog" class="footer-link">Blog</a>
                     </div>
                     <div class="link-column">
+                        <h4 style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--text-muted);margin-bottom:8px;font-weight:500;">Connect</h4>
                         <a href="#contact" class="footer-link">Contact</a>
                         <a href="#products" class="footer-link">Free Guide</a>
                     </div>
                 </div>
                 
                 <div class="footer-social">
-                    <a href="#" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="social-icon" target="_blank"><i class="fas fa-store"></i></a>
+                    <a href="https://twitter.com/AliZafarAI" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/in/alizafar780" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://youtube.com/@alizafar780" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/AliZafar780" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <div class="copyright">© 2026 Ali Zafar. All rights reserved.</div>
-                <div class="footer-note">Built with AI tools · Islamabad, Pakistan 🇵🇰</div>
+                <div class="copyright">&copy; 2026 Ali Zafar. All rights reserved.</div>
+                <div class="footer-note">Built with AI tools &middot; Islamabad, Pakistan &#x1F1F5;&#x1F1F0;</div>
             </div>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
